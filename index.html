@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Border radius picker</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="index.js" defer></script>
+</head>
+
+<body>
+   <div class="main-container">
+      <h1 class="title">BORDER RADIUS PICKER</h1>
+
+      <div class="picker">
+         <div class="top-inputs">
+            <div class="inputs">
+               <label for="top-left">Top-left</label><br>
+               <input type="number" value="25" id="top-left" name="top-left" onchange="changeRadius()">
+            </div>
+            <div class="inputs">
+               <label for="top-right">Top-right</label><br>
+               <input type="number" value="25" id="top-right" name="top-right" onchange="changeRadius()">
+            </div>
+         </div>
+
+         <div class="canvas-border">
+            <div id="box" class="box"></div>
+         </div>
+
+         <div class="bottom-inputs">
+            <div class="inputs">
+               <label for="bottom-left">Bottom-left</label><br>
+               <input type="number" value="25" id="bottom-left" name="bottom-left" onchange="changeRadius()">
+            </div>
+            <div class="inputs">
+               <label for="bottom-right">Bottom-right</label><br>
+               <input type="number" value="25" id="bottom-right" name="bottom-right" onchange="changeRadius()">
+            </div>
+         </div>
+
+
+      </div>
+
+      <div class="copy-css" onclick="copyCode()">
+         <span class="code-title">Your CSS code:</span>
+         <span class="to-copy" id="code">
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+         </span>
+         <span class="tooltip">Click on the code to copy it!</span>
+      </div>
+   </div>
+</body>
+
+</html>

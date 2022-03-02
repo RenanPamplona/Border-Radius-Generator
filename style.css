@@ -1,0 +1,95 @@
+body{
+   margin: 0px;
+   padding: 0px;
+   background-color: #5e5e5e;
+   font-family: sans-serif;
+}
+
+.main-container{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   
+}
+
+.title{
+   font-size: 45px;
+   text-align: center;
+   max-width: 600px;
+}
+
+.canvas-border{
+   width: 500px;
+   height: 250px;
+   background-color: #a4a4a4;
+   border: solid black 1px;
+   padding: 30px;
+   margin-bottom: 10px;
+   margin-top: 15px;
+}
+
+.box{
+   background-color: #5e5e5e;
+   width: 100%;
+   height: 100%;
+   border: solid black 1px;
+   border-top-left-radius: 25px;
+   border-top-right-radius: 25px;
+   border-bottom-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+}
+
+#input{
+   width: 40px;
+   margin-top: 2px;
+}
+
+.top-inputs, .bottom-inputs{
+   display: flex;
+   justify-content: space-between;
+}
+
+.inputs:hover{
+   color: white;
+   transition: 0.1s;
+}
+
+.copy-css{
+   margin-top: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.code-title{
+   text-align: center;
+   font-size: 13px;
+   color: rgb(255, 255, 255);
+   margin-bottom: 10px;
+}
+
+.to-copy{
+   padding: 5px;
+   background-color: #424242;
+   width: 250px;
+   margin-bottom: 20px;
+}
+
+.tooltip{
+   text-align: center;
+   font-size: 13px;
+   padding: 7px;
+   background-color: #484848;
+   color: white;
+   width: 200px;
+   visibility: hidden;
+   opacity: 0;
+   transition: 0.3s all ease-in-out;
+}
+
+.copy-css:hover .tooltip{
+   visibility: visible;
+   opacity: 1;
+}
